@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -31,7 +36,7 @@
               <a href="./index.html" class="header-link">Студия</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link header-link-current">Портфолио</a>
+              <a href="./portfolio.html" class="header-link current">Портфолио</a>
             </li>
             <li class="header-item">
               <a href="" class="header-link">Контакты</a>
@@ -39,16 +44,16 @@
           </ul>
         </nav>
         <ul class="contact-items list">
-          <li>
-            <a class="contact-item header-link link" href="mailto:info@devstudio.com">
+          <li class="contact-item">
+            <a class="contact-link link" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact-item header-link link" href="tel:+380961111111">
+          <li class="contact-item">
+            <a class="contact-link link" href="tel:+380961111111">
               <svg class="contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#tell"></use>
               </svg>
@@ -64,6 +69,7 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="btn-items list">
+            <!-- Кнопки менюшки -->
             <li>
               <button
                 type="button"
@@ -83,9 +89,18 @@
               <button type="button" class="btn-portfolio btn-portfolio-dark">Маркетинг</button>
             </li>
           </ul>
+
+          <!-- Карты портфолио  -->
           <ul class="card-set list">
             <li class="portfolio-item">
+<<<<<<< HEAD
+              <a href="#" class="link portfolio-link">
+=======
               <a href="#" class="link">
+<<<<<<< Updated upstream
+=======
+>>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
+>>>>>>> Stashed changes
                 <div class="portfolio-card-wrap">
                   <img src="./images-portfolio/project-1.jpg" alt="1" width="370" height="294" />
                   <p class="portfolio-card-text">
@@ -101,17 +116,31 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-2.jpg" alt="2" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-2.jpg" alt="2" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
-                  <h2 class="name-sites">Постер New Orlean vs Golden Star</h2>
-                  <p class="about-sites">Дизайн</p>
+                  <h2 class="portfolio-name-sites">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio-about-sites">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-3.jpg" alt="3" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-3.jpg" alt="3" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Ресторан Seafood</h2>
                   <p class="portfolio-about-sites">Приложение</p>
@@ -119,8 +148,18 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-4.jpg" alt="4" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-4.jpg" alt="4" width="370" height="294" />
+                  <div class="portfolio-mainpage">
+                    <p class="portfolio-card-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Проект Prime</h2>
                   <p class="portfolio-about-sites">Маркетинг</p>
@@ -128,8 +167,15 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-5.jpg" alt="5" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-5.jpg" alt="5" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Проект Boxes</h2>
                   <p class="portfolio-about-sites">Приложение</p>
@@ -137,8 +183,15 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-6.jpg" alt="6" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-6.jpg" alt="6" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Inspiration has no Borders</h2>
                   <p class="portfolio-about-sites">Inspiration has no Borders</p>
@@ -146,8 +199,15 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-7.jpg" alt="7" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-7.jpg" alt="7" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Издание Limited Edition</h2>
                   <p class="portfolio-about-sites">Дизайн</p>
@@ -155,8 +215,15 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-8.jpg" alt="8" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-8.jpg" alt="8" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Проект LAB</h2>
                   <p class="portfolio-about-sites">Маркетинг</p>
@@ -164,8 +231,15 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#" class="link">
-                <img src="./images-portfolio/project-9.jpg" alt="9" width="370" height="294" />
+              <a href="#" class="link portfolio-link">
+                <div class="portfolio-card-wrap">
+                  <img src="./images-portfolio/project-9.jpg" alt="9" width="370" height="294" />
+                  <p class="portfolio-card-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="wrapper">
                   <h2 class="portfolio-name-sites">Growing Business</h2>
                   <p class="portfolio-about-sites">Приложение</p>
