@@ -18,12 +18,11 @@
   --indent: 30px;
   --items: 3;
   /* transion */
-  --transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* !!!global values!!! */
 body {
-  position: relative;
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   font-size: 14px;
@@ -130,17 +129,7 @@ img {
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
-<<<<<<< Updated upstream
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
   transition: color var(--transition), background-color var(--transition);
-=======
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 
 .hero-btn:hover,
@@ -155,14 +144,6 @@ img {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 .header {
-<<<<<<< Updated upstream
-  position: absolute;
-=======
-<<<<<<< HEAD
-=======
-  position: absolute;
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
   width: 100%;
   background-color: var(--white-cl);
   border-bottom: 1px solid rgba(236, 236, 236, 1);
@@ -210,36 +191,23 @@ img {
   text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-.header-link,
-.header-link-current {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
 .header-item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
   transition: color var(--transition);
-=======
-.header-link,
-.header-link-current {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 
 .header-link:hover,
 .header-link:focus,
 .contact-item:hover,
-.contact-item:focus {
-  color: var(--accent-txt-cl);
-}
-
+.contact-item:focus,
 .current {
-  position: relative;
   color: var(--accent-txt-cl);
 }
 
@@ -247,13 +215,12 @@ img {
   content: '';
   display: block;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-txt-cl);
+  background-color: var(--color-accent);
   border-radius: 2px;
-  /* transition: color var(--transition); */
+  transition: color var(--transition);
 }
 .contact-link {
   gap: 10px;
@@ -434,18 +401,17 @@ img {
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link {
   fill: #afb1b8;
-  transition: color var(--transition), background-color var(--transition);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-link:hover,
 .company-link:focus {
-  fill: var(--accent-txt-cl);
-  border: 1px solid var(--accent-txt-cl);
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 /* 
@@ -487,15 +453,7 @@ img {
   gap: 9px;
   font-weight: 400;
   line-height: calc(24 / 14);
-<<<<<<< Updated upstream
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
   transition: color var(--transition);
-=======
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 
 .address-item {
@@ -531,17 +489,7 @@ img {
   border: none;
   border-radius: 4px;
   line-height: calc(26 / 16);
-<<<<<<< Updated upstream
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
   transition: color var(--transition), background-color var(--transition);
-=======
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 .btn-portfolio-dark {
   color: var(--main-txt-cl);
@@ -562,54 +510,15 @@ img {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 .portfolio-about-sites {
   font-size: 16px;
   line-height: calc(30 / 16);
-  color: var(--grey-cl);
+  color: #757575;
 }
 .portfolio-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-.portfolio-card-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-mainpage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  text-align: left;
-
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform var(--transition);
-  overflow: auto;
-}
-
-.portfolio-link:hover .portfolio-mainpage {
-  transform: translateY(0);
-=======
->>>>>>> Stashed changes
 .portfolio-item:hover .portfolio-card-text {
   transform: translateY(0);
 }
@@ -617,32 +526,6 @@ img {
 .portfolio-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
-}
-
-.portfolio-card-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  text-align: left;
-
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
-}
-
-.portfolio-card-wrap {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio-card-text {
@@ -676,11 +559,6 @@ img {
   border-top: none;
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
 /* all icons are here */
 
 /* socials icons */
@@ -700,17 +578,8 @@ img {
   fill: #afb1b8;
   background-color: #ffffff;
   border-radius: 50%;
-<<<<<<< Updated upstream
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
-  transition: color var(--transition), background-color var(--transition);
-=======
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 .social-link:hover,
 .social-link:focus {
@@ -732,31 +601,23 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #484a50;
-<<<<<<< HEAD
-  fill: var(--white-cl);
-  transition: color var(--transition), background-color var(--transition);
-=======
   fill: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-<<<<<<< Updated upstream
-=======
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 .contactus-link:hover,
 .contactus-link:focus {
-  fill: var(--white-cl);
-  background-color: var(--accent-txt-cl);
+  fill: #ffffff;
+  background-color: #2196f3;
 }
 .contactus-title {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--white-cl);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -767,32 +628,15 @@ img {
 }
 
 /* backdrop section */
-<<<<<<< Updated upstream
-
-=======
-<<<<<<< HEAD
 /* modal window */
-=======
-
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 .backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-<<<<<<< Updated upstream
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
-  transition: opacity var(--transition), visibility var(--transition);
-=======
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 
 .modal {
@@ -801,44 +645,18 @@ img {
   min-height: 581px;
   left: 50%;
   top: 50%;
-<<<<<<< Updated upstream
   transform: translate(-50%, -50%);
-=======
-<<<<<<< HEAD
-  transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
-=======
-  transform: translate(-50%, -50%);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-<<<<<<< Updated upstream
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-=======
-<<<<<<< HEAD
-  transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
-=======
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
 }
 .backdrop-btn {
   width: 30px;
   height: 30px;
-<<<<<<< Updated upstream
   border: 1px solid #000000;
-=======
-<<<<<<< HEAD
-  border: 1px solid var(--black-cl);
-=======
-  border: 1px solid #000000;
->>>>>>> 560162439b02b58c8fa1320ab641e203e0b0901c
->>>>>>> Stashed changes
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
@@ -856,10 +674,9 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-<<<<<<< Updated upstream
+/* пули анімацій */
 
-.fast {
-  color: red;
+/* анімація відкриття
+ закриття модального вікна *
 }
-=======
->>>>>>> Stashed changes
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
