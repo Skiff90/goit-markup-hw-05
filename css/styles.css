@@ -654,7 +654,7 @@ img {
     visability var(--modal-transition);
 }
 
-.backdpop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
 
