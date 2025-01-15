@@ -24,6 +24,7 @@
 
 /* !!!global values!!! */
 body {
+  width:1600;
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   font-size: 14px;
